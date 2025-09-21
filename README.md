@@ -27,12 +27,10 @@ An AI-powered web application that creates personalized bedtime stories for chil
 ## Getting Started
 
 1. Clone the repository:
-bash
 git clone https://github.com/YigitTabak/BedtimeStoryGenerator.git
 
 
 2. Install dependencies:
-bash
 npm install
 
 
@@ -42,7 +40,6 @@ VITE_GEMINI_API_KEY=your_api_key_here
 
 
 4. Start the development server:
-bash
 npm run dev
 
 
@@ -50,5 +47,5 @@ npm run dev
 
 1. Navigate to the "Create" page
 2. Fill in the story parameters
-3. Click "Create" to generate a personalized story
+3. Click "Create" to generate a personalized bedtime story
 4. View previously generated stories in the "Archive" section
