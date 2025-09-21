@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app-container{
+  background: linear-gradient(135deg, #0a1a4f 0%, #1f3b8f 100%);
+  min-height: calc(100vh - 90px);
+}
+
+@media (max-width: 1024px) {
+  .app-container {
+    min-height: calc(100vh - 65px);
+  }
+}

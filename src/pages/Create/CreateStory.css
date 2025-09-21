@@ -1,0 +1,176 @@
+input{
+    border-radius: 15px;
+    border: 1px solid #ccc;   
+    padding: 8px 12px;        
+    outline: none;            
+    font-size: 13px;          
+    width: 100%;
+}
+
+select {
+    border-radius: 15px;      
+    border: 1px solid #ccc;   
+    padding: 8px 12px;        
+    font-size: 16px;           
+    outline: none;            
+    background-color: #fff;   
+    appearance: none;         
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    transition: border 0.3s;
+    cursor: pointer;
+    width: 100%;
+}
+
+.aligned-items{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.create-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    min-height: calc(100vh - 90px);
+}
+
+.create-box{
+    display: flex;
+    background-color: #f5f6fa;
+    width: 70%;
+    padding: 18px;
+    border-radius: 12px;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.description{
+    text-align: center;
+    margin-bottom: 28px;
+    color: #c78aff;
+    font-size: 2rem;
+    padding-top: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.description::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
+    border-radius: 2px;
+}
+
+.input-part{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.create-double{
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.create-length{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.create-charac{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.create-theme{
+    margin: 16px 0px;
+}
+.create-atmosp{
+    margin: 16px 0px;
+}
+
+.output-part{
+    flex: 1;
+    padding: 5px 10px;
+}
+
+.create-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 12px;
+}
+
+.story-text{
+  font-family: "Gwendolyn", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; 
+    appearance: textfield;
+    min-width: 0;
+    width: 100%; 
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.create-name,
+.create-age {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .description{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .create-double,.create-box{
+        flex-direction: column;
+    }
+    .description{
+        font-size: 0.7rem;
+    }
+    .create-box{
+        width: 90%;
+    }
+}
+

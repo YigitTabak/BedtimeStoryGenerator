@@ -1,0 +1,43 @@
+.archive-container{
+    display: flex;
+    min-height: calc(100vh - 90px);
+    padding: 3%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.archive-title{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}   
+
+.archive-box{
+    background-color: #f5f6fa;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 25%;
+    margin: 10px;
+    flex: 0 1 320px;
+    overflow-y: auto;
+    max-height: 450px; 
+}
+
+.archive-box p strong {
+    font-size: 25px;
+}
+.archive-box p {
+    text-align: center;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .archive-container{
+        flex-direction: column;
+    }
+    .archive-box{
+        padding: 10px;
+    }
+}

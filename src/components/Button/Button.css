@@ -1,0 +1,39 @@
+.button {
+  padding: 10px 22px; 
+  background: linear-gradient(145deg, #1e3a8a, #1e40af);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px; 
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background: linear-gradient(145deg, #2563eb, #1d4ed8);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+button:active,
+a:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.button.purple {
+  background: linear-gradient(145deg, #7e22ce, #a855f7);
+}
+
+@media (max-width: 1024px) {
+    .button{
+      padding: 4px 6px;
+      font-size: 0.8rem;
+    }
+    .button.purple {
+      font-size: 1.2rem;
+    }
+}
