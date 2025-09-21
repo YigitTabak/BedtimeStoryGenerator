@@ -1,3 +1,7 @@
+![image alt](https://github.com/YigitTabak/BedtimeStoryGenerator/blob/master/src/assets/Home.png?raw=true)
+![image alt](https://github.com/YigitTabak/BedtimeStoryGenerator/blob/master/src/assets/Story.png?raw=true)
+![image alt](https://github.com/YigitTabak/BedtimeStoryGenerator/blob/master/src/assets/Archive.png?raw=true)
+![image alt](https://github.com/YigitTabak/BedtimeStoryGenerator/blob/master/src/assets/Responsive.png?raw=true)
 # Bedtime Story Generator
 
 An AI-powered web application that creates personalized bedtime stories for children using Google's Gemini API.
